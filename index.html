@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homepage - Raphael Matjeschk</title>
+</head>
+<body>
+    <nav>
+        <a id="navTitle">Raphael Matjeschk</a>
+        <div class="links">
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+        <div id="hamburger" class="hamburger">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+    </nav>
+    <header id="start">
+        <h1 id="title">Raphael Matjeschk</h1>
+        <p id="subtitle">Zwischen Logik und Kreativität – die Kunst der Informatik.</p>
+    </header>
+    <main>
+        <div id="about">
+            <h2>Über mich</h2>
+            <hr class="smallDivider" />
+            <!-- TODO: .wrapper -> #img + #text -->
+            <p>
+                <p>Hey, ich bin Raphael! 👋 Politisch engagiert und immer auf der Suche nach neuen Lösungen für die Probleme unserer Zeit. Effizient und vorrausschauend nutze ich meine technischen Fähigkeiten um die Welt jeden Tag ein kleines bisschen besser zu machen. </p>
+                <p>Ich wurde 2007 in Leipzig geboren. Schon immer hatte ich Freude daran, neue Dinge zu erlernen und mich auszuprobieren. Kaum verwunderlich ist es also, dass ich bereits relativ früh ein Interesse für technische Prozesse entwickelte. Im Laufe der Zeit wurde dieses Interesse immer mehr zur Leidenschaft - gemeinsam mit Politik wurde es zu dem, was mich als Person ausmacht.</p>
+                <p>Heute kombiniere ich meine Leidenschaft für Technik mit meinem Engagement für gesellschaftliche Veränderung. Mit jedem Projekt, das ich umsetze, strebe ich danach, sowohl in der digitalen als auch in der "realen" Welt einen positiven Einfluss zu hinterlassen. Ich glaube fest daran, dass Technologie und Innovation Schlüssel zu einer nachhaltigeren und gerechteren Zukunft sind.</p>
+            </p>
+        </div>
+        <div id="contact">
+            <h2>Kontakt</h2>
+            <hr class="smallDivider" />
+            <p>
+                Du möchtest mit mir in Kontakt treten? Schreib mir gerne eine E-Mail an <a class="link" href="mailto:raphael@matjeschk.dev">raphael@matjeschk.dev</a>. Oder mach's einfach direkt hier: 
+                <form class="form" id="contactForm">
+                    <input class="input" type="text" id="mailSubject" placeholder="Betreff" />
+                    <textarea class="input" id="mailContent" placeholder="Deine Nachricht"></textarea>
+                    <button class="button" id="sendButton">Absenden</button><br>
+                    <p>Nach dem click auf "Absenden" wirst du in deinen Mail-Client weitergeleitet, von welchem aus du die Mail abschicken musst.</p>
+                    <p><strong>Disclaimer:</strong> Diese Seite dient ausschließlich der privaten Kommunikation. Jegliche Anfragen oder Nachrichten werden nicht als geschäftliche oder vertragliche Anfragen betrachtet. Es besteht keine Verpflichtung zur Beantwortung oder Bearbeitung von Anfragen, die über dieses Formular eingehen. Die Nutzung des Formulars erfolgt auf eigene Verantwortung.</p>
+                </form>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <a>&copy; <script>document.write(new Date().getFullYear());</script> Raphael Matjeschk. Alle Rechte vorbehalten.</a>
+    </footer>
+</body>
+</html>
