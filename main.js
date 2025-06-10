@@ -12,17 +12,7 @@ function changeNavbarToInactive() {
     });
 }
 
-// Sticky-Header Transparency Transistion
-document.addEventListener("scroll", () => {
-    if(window.scrollY > 0) {
-        changeNavbarToActive();  
-    } else {
-        changeNavbarToInactive();
-    }
-});
-
-// Activate Mobile Navbar
-document.querySelector(".hamburger").addEventListener("click", () => {
+function changeNavbarHandler() {
     changeNavbarToActive();
     if (document.querySelector(".bar").classList.contains("toggled") && window.scrollY === 0) {
         changeNavbarToInactive();
@@ -32,11 +22,31 @@ document.querySelector(".hamburger").addEventListener("click", () => {
         bar.classList.toggle("toggled");
     });
     document.querySelector(".links").classList.toggle("toggled");
+}
+
+// Sticky-Header Transparency Transistion
+document.addEventListener("scroll", () => {
+    if(window.scrollY > 0) {
+        changeNavbarToActive();  
+    } else {
+        changeNavbarToInactive();
+    }
+});
+
+document.querySelectorAll("nav .links ul li a").forEach((link) => {
+    link.addEventListener("click", () => {
+        changeNavbarHandler();
+    });
+});
+
+// Activate Mobile Navbar
+document.querySelector(".hamburger").addEventListener("click", () => {
+    changeNavbarHandler();
 });
 
 // Contact-Form "Backend"
 document.querySelector("#sendButton").addEventListener("click", () => {
-    const receiver = "raphael@matjeschk.dev";
+    const receiver = "kontakt@matjeschk.dev";
     const subject = document.querySelector("#mailSubject").value;
     const content = document.querySelector("#mailContent").value;
 

@@ -133,7 +133,8 @@ nav ul li a:hover {
 }
 
 /* Header */
-header {
+header#start { 
+    scroll-margin-top: 100px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,6 +160,9 @@ main {
     display: flex;
     flex-direction: column;
     padding: 60px 120px;
+}
+main > div[id] { 
+    scroll-margin-top: 100px;
 }
 main p {
     margin: 5px 0;
