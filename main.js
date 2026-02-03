@@ -35,7 +35,10 @@ document.addEventListener("scroll", () => {
 
 document.querySelectorAll("nav .links ul li a").forEach((link) => {
     link.addEventListener("click", () => {
-        changeNavbarHandler();
+        // Only toggle navbar (and scrolling) if in mobile view
+        if (window.matchMedia('(max-width: 1024px)').matches) {
+            changeNavbarHandler();
+        }
     });
 });
 
